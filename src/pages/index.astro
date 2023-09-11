@@ -1,15 +1,558 @@
 ---
+import Projects from "../components/Projects";
+import Navbar from "../components/Navbar";
+import Contact from "../components/Contact";
+import { ChevronRight } from "lucide-react";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Marcelo Arias — Software Engineer</title>
+    <meta
+      name="description"
+      content="I'm Marcelo Arias. Software engineer, open-source contributor and creator of tech products. Working on Machine Learning, Web Development and Aerial Robotics."
+    />
+    <meta name="author" content="Marcelo Arias" />
+
+    <link rel="icon" type="image/png" href="./images/favicon/icon-light.ico" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <meta name="application-name" content="Marcelo Arias" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="🚀 Marcelo Arias — Software Engineer" />
+    <meta property="og:url" content="https://marceloarias.com/" />
+    <meta property="og:site_name" content="https://marceloarias.com/" />
+    <meta
+      property="og:description"
+      content="I'm Marcelo Arias. Software engineer, open-source contributor and creator of tech products. Working on Machine Learning, Web Development and Aerial Robotics."
+    />
+    <meta
+      property="og:image"
+      content="https://marceloarias.com/images/thumbnail/thumbnail.png"
+    />
+    <meta property="profile:first_name" content="Marcelo" />
+    <meta property="profile:last_name" content="Arias" />
+    <meta property="profile:username" content="360macky" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@360macky" />
+    <meta name="twitter:title" content="🚀 Marcelo Arias — Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="I'm Marcelo Arias. Software engineer, open-source contributor and creator of tech products. Working on Machine Learning, Web Development and Aerial Robotics."
+    />
+
+    <link rel="canonical" href="https://marceloarias.com" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Inter:wght@300;500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/global.css" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-174901412-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-174901412-1");
+    </script>
+  </head>
+  <body>
+    <div id="white-cover" aria-hidden="true">
+      <p id="typewriter-text" class="font-bold"></p>
+    </div>
+    <Navbar client:only />
+    <main>
+      <section
+        id="welcome"
+        class="welcome-section min-h-screen xl:min-h-min xl:pt-24"
+      >
+        <div class="max-w-screen-lg mx-auto flex justify-center items-center">
+          <div class="welcome-section__card">
+            <h1
+              id="title"
+              class="website-title tracking-tighter"
+              itemprop="title"
+            >
+              Marcelo Arias
+            </h1>
+            <h2
+              id="handle"
+              class="welcome-section__handle tracking-tight mt-2 text-2xl lg:text-3xl"
+              itemprop="subheading"
+            >
+              Software Engineer — @360macky
+            </h2>
+            <div class="welcome-section__buttons">
+              <a
+                href="#work"
+                class="btn btn__call-action text-xl lg:text-lg btn__call-action--primary"
+              >
+                Showcase
+              </a>
+              <a
+                href="https://articles.marceloarias.com/"
+                target="_blank"
+                class="btn btn__call-action text-xl lg:text-lg btn__call-action--secondary"
+              >
+                Case studies
+              </a>
+            </div>
+            <div class="welcome-section__work">
+              <blockquote>
+                <p
+                  id="contributionsDescription"
+                  class="max-w-xl"
+                  itemprop="description"
+                >
+                  Marcelo creates software products: from apps, websites,
+                  plugins and libraries. With more than 8 years building things
+                  that live on the internet. Loves bikes, robotics, and
+                  astronomy. Lives in the west coast of Lima.
+                </p>
+              </blockquote>
+              <div class="welcome-section__work__logos">
+                <img src="./images/graphem-logo.png" alt="Graphem" />
+                <img src="./images/monowave-logo.png" alt="Monowave" />
+                <img src="./images/scannercam-logo.png" alt="Scannercam" />
+                <img src="./images/platkey-logo.png" alt="Platkey" />
+              </div>
+            </div>
+            <ul class="welcome-section__social-networks">
+              <li>
+                <a
+                  href="https://mastodon.social/@360macky"
+                  title="Mastodon"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i
+                    title="Mastodon"
+                    class="fab fa-mastodon"
+                    role="img"
+                    aria-hidden="true"></i></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/360macky"
+                  title="Twitter"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i
+                    title="Twitter"
+                    class="fab fa-twitter"
+                    role="img"
+                    aria-hidden="true"></i></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/360macky"
+                  title="GitHub"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i title="GitHub" class="fab fa-github" role="img"></i></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://youtube.com/@360macky"
+                  title="YouTube"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i
+                    title="YouTube"
+                    class="fab fa-youtube"
+                    role="img"
+                    aria-hidden="true"></i></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://news.ycombinator.com/user?id=360macky"
+                  title="HackerNews"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i
+                    title="HackerNews"
+                    class="fab fa-y-combinator"
+                    role="img"
+                    aria-hidden="true"></i></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/marcelo-arias/"
+                  title="LinkedIn"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i
+                    title="LinkedIn"
+                    class="fab fa-linkedin-in"
+                    role="img"
+                    aria-hidden="true"></i></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="welcome-section__photograph-container max-w-md">
+            <img
+              src="/images/portraits/MarceloArias.webp"
+              alt="Marcelo Arias"
+              title="Marcelo Arias"
+              width={0}
+            />
+          </div>
+        </div>
+      </section>
+      <section id="work" class="projects-section">
+        <h2
+          class="text-6xl pt-12 lg:pt-36 font-extrabold to-be-scrolled"
+          id="projectsTitle"
+        >
+          Work
+        </h2>
+        <div
+          class="projects__description lg:text-xl to-be-scrolled max-w-3xl text-center pt-2 px-8 lg:pt-8 lg:pb-20"
+          id="projectsDescription"
+        >
+          From the concept, the design, the development, and the deployment.<br />
+          The following is a selection of projects I've worked on.
+        </div>
+        <Projects client:load />
+        <div
+          class="circle-of-development--container to-be-scrolled min-h-[80vh] lg:min-h-0 my-12"
+        >
+          <div
+            class="circle-of-development--text flex flex-col justify-center p-8"
+          >
+            <h3 class="text-2xl lg:text-5xl text-center">
+              I like to learn and experiment with more technologies in Open
+              Source projects.
+            </h3>
+            <a
+              href="https://github.com/360macky"
+              class="flex gap-x-1 text-lg lg:text-2xl justify-center items-center pt-4 hover:underline underline-offset-8 dark:text-blue-200 text-blue-800"
+            >
+              Show all OSS projects
+              <ChevronRight className="h-6 w-6" />
+            </a>
+          </div>
+          <img
+            src="./images/circle.png"
+            alt="Technologies and organizations"
+            class="circle-of-development"
+            aria-hidden="true"
+          />
+        </div>
+      </section>
+      <section id="experience" class="about-me-section">
+        <h2
+          class="project-section-header to-be-scrolled text-6xl font-bold"
+          id="aboutTitle"
+        >
+          Experience
+        </h2>
+        <div
+          class="flex flex-col flex-wrap justify-center items-center space-x-8 space-y-6"
+        >
+          <div class="about-me-container__box about-me--brief-story">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-to-be-scrolled="true"
+              />
+              <h3 class="text-3xl lg:text-5xl font-bold">
+                <i class="fas fa-child" role="img" aria-hidden="true"></i>
+                <span id="briefStory">Brief Story</span>
+              </h3>
+              <p id="briefStory__content" class="lg:text-lg">
+                At 13 years old I was fascinated by the Internet and how it
+                worked. I develop my first website and published on Christmas
+                2015. Over the years, I've learned to code and how to build
+                websites and web applications considering performance and
+                accessibility.
+              </p>
+            </div>
+          </div>
+          <div class="about-me-container__box">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-5xl font-bold">
+                <i class="fas fa-pen" role="img" aria-hidden="true"></i>
+                <span id="techWriting">Tech Writing</span>
+              </h3>
+              <p id="techWriting__content" class="lg:text-lg">
+                Then, I started writing about technology, programming, and other
+                topics that I find interesting in DEV, the largest community of
+                software developers.
+              </p>
+              <div class="about-me-container-links">
+                <a
+                  href="https://codebase.substack.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-rss" role="img" aria-hidden="true"></i>
+                  <span>Codebase</span>
+                </a>
+                <a
+                  href="https://dev.to/360macky"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-pencil-ruler" role="img" aria-hidden="true"
+                  ></i>
+                  <span id="devArticles">DEV Articles</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about-me-container__box">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-5xl font-bold">
+                <i class="fas fa-building" role="img" aria-hidden="true"></i>
+                <span id="workStory">Work at Start-ups</span>
+              </h3>
+              <p id="workStory__content" class="lg:text-lg">
+                I've worked at two start-ups as a Software Developer: Blaze and
+                Tutoom. Check out my LinkedIn profile for more information about
+                how I've contributed to the product development of these
+                companies.
+              </p>
+              <div class="about-me-container-links">
+                <a
+                  href="https://www.linkedin.com/in/marcelo-arias/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-linkedin-in" role="img" aria-hidden="true"
+                  ></i>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about-me-container__box">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-5xl font-bold">
+                <i class="fas fa-space-shuttle" role="img" aria-hidden="true"
+                ></i>
+                <span id="openSource">Open-Source Contributor</span>
+              </h3>
+              <p id="openSource__content" class="lg:text-lg">
+                I love to create and contribute to Open Source projects
+                (Websites, apps, browser extensions, plugins). Currently, I'm
+                working on NASA Open Mission Control Technologies as a
+                contributor. A mission control framework for visualizing
+                telemetry.
+              </p>
+              <div class="about-me-container-links">
+                <a
+                  href="https://github.com/360macky?org=nasa&year_list=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-asterisk" role="img" aria-hidden="true"></i>
+                  <span id="contributions">Contributions</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/marcelo-arias/details/volunteering-experiences/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fa fa-heart" role="img" aria-hidden="true"></i>
+                  <span id="volunteering">Volunteering</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about-me-container__box">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-5xl font-bold">
+                <i class="fas fa-laptop" role="img" aria-hidden="true"></i>
+                <span id="creator">Educative Content Creator</span>
+              </h3>
+              <p class="lg:text-lg">
+                I've two YouTube channels (for English/Spanish-speaking
+                communities). "Tech and Marcelo" is a channel where I share my
+                knowledge about programming. "Arte de programar" is a channel
+                where I teach Computer Science concepts with animations and
+                drawings.
+              </p>
+              <div class="about-me-container-links">
+                <a
+                  href="https://github.com/360macky?org=nasa&year_list=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-youtube" role="img" aria-hidden="true"></i>
+                  <span>Arte de programar</span>
+                </a>
+                <a
+                  href="https://github.com/360macky?org=nasa&year_list=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-youtube" role="img" aria-hidden="true"></i>
+                  <span>Tech with Marcelo</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about-me-container__box">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-5xl font-bold">
+                <i class="fas fa-book" role="img" aria-hidden="true"></i>
+                <span id="lifelongLearner">Lifelong learner</span>
+              </h3>
+              <p id="lifelongLearner__content" class="lg:text-lg">
+                Graduated in Software Development career. I always try to learn
+                new things and experiment with new technologies. It's the best
+                way to keep up with the fast-paced world. Not everything I learn
+                is related to programming. Space exploration and Aerial Robotics
+                are topics that I love to learn about.
+              </p>
+              <div class="about-me-container-links">
+                <a
+                  href="https://www.linkedin.com/in/marcelo-arias/details/certifications/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-award" role="img" aria-hidden="true"></i>
+                  <span id="onlineCertifications">Online certifications</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about-me-container__box">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-5xl font-bold">
+                <i class="fas fa-flask" role="img" aria-hidden="true"></i>
+                <span id="lifelongLearner">Software Studio</span>
+              </h3>
+              <p id="lifelongLearner__content" class="lg:text-lg">
+                I started Astronware, my own Software Studio in 2023. With the
+                goal of scaling all my previous projects, experiments and products
+                into one technology brand.
+              </p>
+              <div class="about-me-container-links">
+                <a
+                  href="https://www.linkedin.com/in/marcelo-arias/details/certifications/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-atom" role="img" aria-hidden="true"></i>
+                  <span id="onlineCertifications">Astronware</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about-me-container__box about-me--today">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-5xl font-bold">
+                <i class="fas fa-rocket" role="img" aria-hidden="true"></i>
+                <span id="today">Today</span>
+              </h3>
+              <p id="today__content" class="lg:text-lg">I love to create!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Contact client:only />
+    </main>
+    <footer class="footer">
+      <div class="footer__row">
+        <p class="footer__title">Marcelo's Portfolio</p>
+      </div>
+      <div class="footer__row">
+        <p class="footer__description" id="phrase">
+          Wonderful things happen when you combine creativity and technology.
+          Here you can find some of my projects.
+        </p>
+        <p class="footer__description" id="madeWith">
+          Marcelo Arias is a Software Engineer.
+        </p>
+      </div>
+      <div class="footer__row">
+        <p class="footer__email">hello@marceloarias.com</p>
+        <p>2015 - 2023</p>
+      </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
 </html>
