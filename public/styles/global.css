@@ -1157,14 +1157,14 @@
   
     .circle-of-development--text:hover {
       /* transform: scale(1.2); */
-      background-color: var(--color-dark50);
     }
-  
+    
     .circle-of-development--container {
       text-shadow: 0 0 0.875rem var(--color-black);
     }
-  
+    
     .circle-of-development--text {
+      background-color: var(--color-dark50);
       position: absolute;
       height: 100%;
       width: 100%;
