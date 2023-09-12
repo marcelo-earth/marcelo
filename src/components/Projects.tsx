@@ -37,8 +37,8 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
         }
       )}
     >
-      <div className="flex max-w-screen-lg mx-auto group py-12 lg:py-28">
-        <div className="w-6/12">
+      <div className="flex flex-col lg:flex-row max-w-screen-lg mx-auto group py-12 lg:py-28">
+        <div className="lg:w-6/12">
           <h3 className="flex space-x-2 items-center text-4xl min-h-18 tracking-tight font-inter font-semibold gap-x-3">
             <img
               src={project.logo}
@@ -105,7 +105,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           <img
             src={project.image}
             alt="Laptop"
-            className="hidden lg:flex group-hover:scale-150 transition duration-1000 m-auto"
+            className="lg:group-hover:scale-150 transition duration-1000 m-auto"
             ref={refImage}
           />
         </div>
