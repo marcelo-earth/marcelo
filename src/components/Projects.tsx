@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 
 type Project = {
   title: string;
+  type: string;
   image: string;
   logo: string;
   description: string;
@@ -49,7 +50,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             />
             {project.title}
           </h3>
-          <h4 className="text-xl pt-2 font-semibold">Web Extension</h4>
+          <h4 className="text-xl pt-2 font-semibold">{project.type}</h4>
           <h5 className="text-xl my-2">{project.description}</h5>
           <p>{project.longDescription}</p>
           <div className="flex gap-y-2 flex-row gap-x-3 lg:gap-x-6 py-2 text-center">
@@ -125,6 +126,7 @@ const Projects = () => {
           key={index}
           project={{
             title: project.name,
+            type: project.type,
             image: project.image,
             logo: project.logo,
             description: project.description,
