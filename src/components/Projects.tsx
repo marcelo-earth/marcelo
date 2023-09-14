@@ -54,7 +54,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           <p>{project.longDescription}</p>
           <div className="flex gap-y-2 flex-row gap-x-3 lg:gap-x-6 py-2 text-center">
             <a
-              href="https://github.com/360macky"
+              href={project.appUrl}
               className={classNames(
                 "text-lg flex justify-center items-center gap-x-1 hover:underline underline-offset-8",
                 {
@@ -77,7 +77,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               <ChevronRight />
             </a>
             <a
-              href="https://github.com/360macky"
+              href={project.caseStudyUrl}
               className={classNames(
                 "text-lg flex justify-center items-center gap-x-1 hover:underline underline-offset-8",
                 {

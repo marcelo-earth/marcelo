@@ -1,6 +1,7 @@
 [
   {
     "name": "Graphem",
+    "type": "NPM Library",
     "description": "GraphQL telemetry plugin connector for NASA visualization framework",
     "tags": ["GraphQL", "WebSockets", "Open MCT", "Node package"],
     "url_repo": "https://github.com/360macky/graphem",
@@ -12,6 +13,7 @@
   },
   {
     "name": "ScannerCam",
+    "type": "Web Platform",
     "description": "Computer Vision web app recognizer of objects in camera with speech",
     "tags": ["React", "Tensorflow", "Speech Synthesis API", "TypeScript"],
     "url_repo": "https://github.com/360macky/scannercam",
@@ -23,6 +25,7 @@
   },
   {
     "name": "Dreamify",
+    "type": "Image Generator",
     "description": "The web app to create high-precision images with Stable Diffusion",
     "tags": ["React", "Next.js", "Tailwind", "Replicate", "Stable Diffusion"],
     "url_repo": "https://github.com/360macky/dreamify",
@@ -34,6 +37,7 @@
   },
   {
     "name": "SoundAir",
+    "type": "Music Platform",
     "description": "The platform to discover music generated/remixed by AI",
     "tags": ["React", "Next", "SoundCloud", "SendGrid", "Firebase"],
     "url_repo": "https://github.com/360macky/",
@@ -45,6 +49,7 @@
   },
   {
     "name": "1spaceX",
+    "type": "Search Platform",
     "description": "Search platform for SpaceX complex physical items: Capsules, Launches, Payloads, Rockets and more",
     "tags": ["SpaceX API", "React", "NodeJS", "SpaceX"],
     "url_repo": "https://github.com/360macky/1spaceX/",
@@ -56,6 +61,7 @@
   },
   {
     "name": "PlatKey",
+    "type": "Web Extension",
     "description": "Chrome/Safari extension that improves Platzi with keyboard shortcuts, integrated whiteboard and Zen/SSH mode",
     "tags": ["Chrome", "JavaScript", "WebKit", "Extension"],
     "url_repo": "https://github.com/360macky/platzikey",
