@@ -26,7 +26,7 @@ import { ChevronRight } from "lucide-react";
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="🚀 Marcelo Arias — Software Engineer" />
     <meta property="og:url" content="https://marceloarias.com/" />
-    <meta property="og:site_name" content="https://marceloarias.com/" />
+    <meta property="og:site_name" content="Marcelo Arias" />
     <meta
       property="og:description"
       content="I'm Marcelo Arias. Software engineer, open-source contributor and creator of tech products. Working on Machine Learning, Web Development and Aerial Robotics."
@@ -48,6 +48,16 @@ import { ChevronRight } from "lucide-react";
     />
 
     <link rel="canonical" href="https://marceloarias.com" />
+
+    <script type="application/ld+json">
+      {
+        "@context" : "https://schema.org",
+        "@type" : "WebSite",
+        "name" : "Marcelo Arias",
+        "alternateName" : "Marcelo Arias — Software Engineer",
+        "url" : "https://marceloarias.com",
+      }
+    </script>
 
     <link
       rel="stylesheet"
@@ -308,6 +318,25 @@ import { ChevronRight } from "lucide-react";
               </p>
             </div>
           </div>
+          <div class="about-me-container__box about-me--brief-story">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-to-be-scrolled="true"
+              />
+              <h3 class="text-3xl lg:text-4xl font-bold">
+                <span id="briefStory">First projects</span>
+              </h3>
+              <p id="briefStory__content" class="lg:text-lg">
+                After learning more and more about web development, I started
+                working on my first projects. I created a website for a local
+                business, a website for a local school, and a website for myself.
+              </p>
+            </div>
+          </div>
           <div class="about-me-container__box">
             <div class="box__description-container">
               <img
@@ -326,14 +355,6 @@ import { ChevronRight } from "lucide-react";
                 software developers.
               </p>
               <div class="about-me-container-links">
-                <a
-                  href="https://codebase.substack.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fas fa-rss" role="img" aria-hidden="true"></i>
-                  <span>Codebase</span>
-                </a>
                 <a
                   href="https://dev.to/360macky"
                   target="_blank"
@@ -386,134 +407,154 @@ import { ChevronRight } from "lucide-react";
                 class="about-me-separator"
                 aria-hidden="true"
               />
-              <h3 class="text-3xl lg:text-4xl font-bold">></h3>
-              <span id="openSource">Open-Source Contributor</span>
-            </div>
-            <p id="openSource__content" class="lg:text-lg">
-              I love to create and contribute to Open Source projects (Websites,
-              apps, browser extensions, plugins). Currently, I'm working on NASA
-              Open Mission Control Technologies as a contributor. A mission
-              control framework for visualizing telemetry.
-            </p>
-            <div class="about-me-container-links">
-              <a
-                href="https://github.com/360macky?org=nasa&year_list=1"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fas fa-asterisk" role="img" aria-hidden="true"></i>
-                <span id="contributions">Contributions</span>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/marcelo-arias/details/volunteering-experiences/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fa fa-heart" role="img" aria-hidden="true"></i>
-                <span id="volunteering">Volunteering</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="about-me-container__box">
-          <div class="box__description-container">
-            <img
-              src="./images/separator.svg"
-              width={0}
-              alt=""
-              class="about-me-separator"
-              aria-hidden="true"
-            />
-            <h3 class="text-3xl lg:text-4xl font-bold">
-              <span id="creator">Educative Content Creator</span>
-            </h3>
-            <p class="lg:text-lg">
-              I found "Arte de programar", an audiovisual project where I teach
-              Computer Science concepts using animations, drawings, and effects.
-              I'm also working on "Tienda 42", a store oriented to software
-              developers.
-            </p>
-            <div class="about-me-container-links">
-              <a
-                href="https://github.com/360macky?org=nasa&year_list=1"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fab fa-youtube" role="img" aria-hidden="true"></i>
-                <span>Arte de programar</span>
-              </a>
+              <h3 class="text-3xl lg:text-4xl font-bold">
+                <span id="openSource">Open-Source Contributor</span>
+              </h3>
+              <p id="openSource__content" class="lg:text-lg">
+                I love to create and contribute to Open Source projects
+                (Websites, apps, browser extensions, plugins). Currently, I'm
+                working on NASA Open Mission Control Technologies as a
+                contributor. A mission control framework for visualizing
+                telemetry.
+              </p>
+              <div class="about-me-container-links">
+                <a
+                  href="https://github.com/360macky?org=nasa&year_list=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-asterisk" role="img" aria-hidden="true"></i>
+                  <span id="contributions">Contributions</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/marcelo-arias/details/volunteering-experiences/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fa fa-heart" role="img" aria-hidden="true"></i>
+                  <span id="volunteering">Volunteering</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="about-me-container__box">
-          <div class="box__description-container">
-            <img
-              src="./images/separator.svg"
-              width={0}
-              alt=""
-              class="about-me-separator"
-              aria-hidden="true"
-            />
-            <h3 class="text-3xl lg:text-4xl font-bold">
-              <span id="lifelongLearner">Lifelong learner</span>
-            </h3>
-            <p id="lifelongLearner__content" class="lg:text-lg">
-              Graduated in Software Development career. I always try to learn
-              new things and experiment with new technologies. It's the best way
-              to keep up with the fast-paced world. Not everything I learn is
-              related to programming. Space exploration and Aerial Robotics are
-              topics that I love to learn about.
-            </p>
-            <div class="about-me-container-links">
-              <a
-                href="https://www.linkedin.com/in/marcelo-arias/details/certifications/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="fas fa-award" role="img" aria-hidden="true"></i>
-                <span id="onlineCertifications">Online certifications</span>
-              </a>
+          <div class="about-me-container__box">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-4xl font-bold">
+                <span id="creator">Educative Content Creator</span>
+              </h3>
+              <p class="lg:text-lg">
+                I found "Arte de programar", an audiovisual project where I
+                teach Computer Science concepts using animations, drawings, and
+                effects. I'm also working on "Tienda 42", a store oriented to
+                software developers.
+              </p>
+              <div class="about-me-container-links">
+                <a
+                  href="https://github.com/360macky?org=nasa&year_list=1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-youtube" role="img" aria-hidden="true"></i>
+                  <span>Arte de programar</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="about-me-container__box">
-          <div class="box__description-container">
-            <img
-              src="./images/separator.svg"
-              width={0}
-              alt=""
-              class="about-me-separator"
-              aria-hidden="true"
-            />
-            <h3 class="text-3xl lg:text-4xl font-bold">
-              <span id="lifelongLearner">Software Studio</span>
-            </h3>
-            <p id="lifelongLearner__content" class="lg:text-lg">
-              I started Astronware, my own Software Studio in 2023. With the
-              goal of scaling all my previous projects, experiments and products
-              into one technology brand.
-            </p>
-            <div class="about-me-container-links">
-              <a href="https://astronware.com" target="_blank" rel="noreferrer">
-                <i class="fas fa-atom" role="img" aria-hidden="true"></i>
-                <span id="onlineCertifications">Astronware</span>
-              </a>
+          <div class="about-me-container__box">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-4xl font-bold">
+                <span id="lifelongLearner">Lifelong learner</span>
+              </h3>
+              <p id="lifelongLearner__content" class="lg:text-lg">
+                Graduated in Software Development career. I always try to learn
+                new things and experiment with new technologies. It's the best
+                way to keep up with the fast-paced world. Not everything I learn
+                is related to programming. Space exploration and Aerial Robotics
+                are topics that I love to learn about.
+              </p>
+              <div class="about-me-container-links">
+                <a
+                  href="https://www.linkedin.com/in/marcelo-arias/details/certifications/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-award" role="img" aria-hidden="true"></i>
+                  <span id="onlineCertifications">Online certifications</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="about-me-container__box about-me--today">
-          <div class="box__description-container">
-            <img
-              src="./images/separator.svg"
-              width={0}
-              alt=""
-              class="about-me-separator"
-              aria-hidden="true"
-            />
-            <h3 class="text-3xl lg:text-4xl font-bold">
-              <span id="today">Today</span>
-            </h3>
-            <p id="today__content" class="lg:text-lg">I love to create!</p>
+          <div class="about-me-container__box">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-4xl font-bold">
+                <span id="lifelongLearner">First-employee experience</span>
+              </h3>
+              <p id="lifelongLearner__content" class="lg:text-lg">
+                In the rise of Artificial Intelligence, I joined SmartUp, a
+                start-up that uses Machine Learning to help companies to
+                understand their customers, as a Staff Software Engineer.
+              </p>
+              <div class="about-me-container-links">
+                <a
+                  href="https://astronware.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-atom" role="img" aria-hidden="true"></i>
+                  <span id="onlineCertifications">Astronware</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about-me-container__box">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-4xl font-bold">
+                <span id="lifelongLearner">Software Studio</span>
+              </h3>
+              <p id="lifelongLearner__content" class="lg:text-lg">
+                I started Astronware, my own Software Studio in 2023. With the
+                goal of scaling all my projects, experiments and products into
+                one technology brand.
+              </p>
+              <div class="about-me-container-links">
+                <a
+                  href="https://astronware.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-atom" role="img" aria-hidden="true"></i>
+                  <span id="onlineCertifications">Astronware</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
