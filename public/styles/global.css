@@ -525,22 +525,16 @@
   /* Disable transition of filters for Safari */
   @supports (-webkit-hyphens: none) {
     .welcome-section__work img {
-      filter: grayscale(1) brightness(0.5) !important;
-      -webkit-filter: grayscale(1) brightness(1);
-      transform: none;
+      /* filter: grayscale(1) brightness(0.5) !important; */
+      /* -webkit-filter: grayscale(1) brightness(1); */
+      /* transform: none; */
       opacity: 1;
     }
-  
-    .welcome-section__work img:hover {
-      filter: grayscale(1) !important;
-      -webkit-filter: grayscale(1);
-      transform: none;
-      opacity: 1;
-    }
-  
+
     @media (prefers-color-scheme: dark) {
       .welcome-section__work img {
-        filter: grayscale(1) brightness(2) !important;
+        /* filter: grayscale(1) brightness(6) !important; */
+        /* transform: none; */
       }
     }
   }
