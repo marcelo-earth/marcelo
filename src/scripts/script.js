@@ -79,7 +79,6 @@ const welcomeSection = document.querySelector('.welcome-section');
 function switchTheme() {
   const ifDarkThemeEnabled = window.matchMedia('(prefers-color-scheme: dark)').matches;
   if (ifDarkThemeEnabled) {
-    document.querySelector('link[rel="icon"]').href = './images/favicon/icon-dark.ico';
     document.getElementsByTagName('meta')['theme-color'].content = '#1C1F24';
     document.documentElement.style.setProperty('--color-white', '#f7f7f7');
     document.documentElement.style.setProperty('--color-default', '#2a313a');
@@ -91,7 +90,6 @@ function switchTheme() {
     document.documentElement.style.setProperty('--color-primary-lighter', '#e7e7e7');
     welcomeSection.style.backgroundImage = `none`;
   } else {
-    document.querySelector('link[rel="icon"]').href = './images/favicon/icon-light.ico';
     document.getElementsByTagName('meta')['theme-color'].content = '#FFFFFF';
     document.documentElement.style.setProperty('--color-white', '#1b1f25');
     document.documentElement.style.setProperty('--color-default', '#f7f7f7');
