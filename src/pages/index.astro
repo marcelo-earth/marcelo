@@ -64,7 +64,7 @@ import { ChevronRight } from "lucide-react";
     />
 
     <link rel="stylesheet" href="/styles/global.css" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#1C1F24" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNC94KS3RN"
@@ -108,7 +108,7 @@ import { ChevronRight } from "lucide-react";
             </h1>
             <h2
               id="handle"
-              class="welcome-section__handle tracking-tight mt-2 text-2xl lg:text-3xl"
+              class="welcome-section__handle tracking-tight mt-2 text-2xl lg:text-3xl font-mono"
               itemprop="subheading"
             >
               Software Engineer — @360macky
@@ -132,7 +132,7 @@ import { ChevronRight } from "lucide-react";
               <blockquote>
                 <p
                   id="contributionsDescription"
-                  class="max-w-xl"
+                  class="max-w-xl font-mono font-normal"
                   itemprop="description"
                 >
                   Marcelo creates software products: from apps, websites,
@@ -252,7 +252,7 @@ import { ChevronRight } from "lucide-react";
         </div>
         <Projects client:load />
         <div
-          class="circle-of-development--container to-be-scrolled min-h-[80vh] lg:min-h-0 my-12"
+          class="circle-of-development--container to-be-scrolled min-h-[80vh] lg:min-h-0 my-12 hidden"
         >
           <div
             class="circle-of-development--text flex flex-col justify-center p-8"
@@ -296,8 +296,7 @@ import { ChevronRight } from "lucide-react";
                 class="about-me-separator"
                 aria-to-be-scrolled="true"
               />
-              <h3 class="text-3xl lg:text-5xl font-bold">
-                <i class="fas fa-child" role="img" aria-hidden="true"></i>
+              <h3 class="text-3xl lg:text-4xl font-bold">
                 <span id="briefStory">Brief Story</span>
               </h3>
               <p id="briefStory__content" class="lg:text-lg">
@@ -318,8 +317,7 @@ import { ChevronRight } from "lucide-react";
                 class="about-me-separator"
                 aria-hidden="true"
               />
-              <h3 class="text-3xl lg:text-5xl font-bold">
-                <i class="fas fa-pen" role="img" aria-hidden="true"></i>
+              <h3 class="text-3xl lg:text-4xl font-bold">
                 <span id="techWriting">Tech Writing</span>
               </h3>
               <p id="techWriting__content" class="lg:text-lg">
@@ -357,8 +355,7 @@ import { ChevronRight } from "lucide-react";
                 class="about-me-separator"
                 aria-hidden="true"
               />
-              <h3 class="text-3xl lg:text-5xl font-bold">
-                <i class="fas fa-building" role="img" aria-hidden="true"></i>
+              <h3 class="text-3xl lg:text-4xl font-bold">
                 <span id="workStory">Work at Start-ups</span>
               </h3>
               <p id="workStory__content" class="lg:text-lg">
@@ -389,177 +386,157 @@ import { ChevronRight } from "lucide-react";
                 class="about-me-separator"
                 aria-hidden="true"
               />
-              <h3 class="text-3xl lg:text-5xl font-bold">
-                <i class="fas fa-space-shuttle" role="img" aria-hidden="true"
-                ></i>
-                <span id="openSource">Open-Source Contributor</span>
-              </h3>
-              <p id="openSource__content" class="lg:text-lg">
-                I love to create and contribute to Open Source projects
-                (Websites, apps, browser extensions, plugins). Currently, I'm
-                working on NASA Open Mission Control Technologies as a
-                contributor. A mission control framework for visualizing
-                telemetry.
-              </p>
-              <div class="about-me-container-links">
-                <a
-                  href="https://github.com/360macky?org=nasa&year_list=1"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fas fa-asterisk" role="img" aria-hidden="true"></i>
-                  <span id="contributions">Contributions</span>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/marcelo-arias/details/volunteering-experiences/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fa fa-heart" role="img" aria-hidden="true"></i>
-                  <span id="volunteering">Volunteering</span>
-                </a>
-              </div>
+              <h3 class="text-3xl lg:text-4xl font-bold">></h3>
+              <span id="openSource">Open-Source Contributor</span>
             </div>
-          </div>
-          <div class="about-me-container__box">
-            <div class="box__description-container">
-              <img
-                src="./images/separator.svg"
-                width={0}
-                alt=""
-                class="about-me-separator"
-                aria-hidden="true"
-              />
-              <h3 class="text-3xl lg:text-5xl font-bold">
-                <i class="fas fa-laptop" role="img" aria-hidden="true"></i>
-                <span id="creator">Educative Content Creator</span>
-              </h3>
-              <p class="lg:text-lg">
-                I found "Arte de programar", an audiovisual project where I
-                teach Computer Science concepts using animations, drawings, and
-                effects. I'm also working on "Tienda 42", a store oriented to
-                software developers.
-              </p>
-              <div class="about-me-container-links">
-                <a
-                  href="https://github.com/360macky?org=nasa&year_list=1"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fab fa-youtube" role="img" aria-hidden="true"></i>
-                  <span>Arte de programar</span>
-                </a>
-                <a
-                  href="https://github.com/360macky?org=nasa&year_list=1"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fab fa-youtube" role="img" aria-hidden="true"></i>
-                  <span>Tech with Marcelo</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="about-me-container__box">
-            <div class="box__description-container">
-              <img
-                src="./images/separator.svg"
-                width={0}
-                alt=""
-                class="about-me-separator"
-                aria-hidden="true"
-              />
-              <h3 class="text-3xl lg:text-5xl font-bold">
-                <i class="fas fa-book" role="img" aria-hidden="true"></i>
-                <span id="lifelongLearner">Lifelong learner</span>
-              </h3>
-              <p id="lifelongLearner__content" class="lg:text-lg">
-                Graduated in Software Development career. I always try to learn
-                new things and experiment with new technologies. It's the best
-                way to keep up with the fast-paced world. Not everything I learn
-                is related to programming. Space exploration and Aerial Robotics
-                are topics that I love to learn about.
-              </p>
-              <div class="about-me-container-links">
-                <a
-                  href="https://www.linkedin.com/in/marcelo-arias/details/certifications/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fas fa-award" role="img" aria-hidden="true"></i>
-                  <span id="onlineCertifications">Online certifications</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="about-me-container__box">
-            <div class="box__description-container">
-              <img
-                src="./images/separator.svg"
-                width={0}
-                alt=""
-                class="about-me-separator"
-                aria-hidden="true"
-              />
-              <h3 class="text-3xl lg:text-5xl font-bold">
-                <i class="fas fa-flask" role="img" aria-hidden="true"></i>
-                <span id="lifelongLearner">Software Studio</span>
-              </h3>
-              <p id="lifelongLearner__content" class="lg:text-lg">
-                I started Astronware, my own Software Studio in 2023. With the
-                goal of scaling all my previous projects, experiments and
-                products into one technology brand.
-              </p>
-              <div class="about-me-container-links">
-                <a
-                  href="https://astronware.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="fas fa-atom" role="img" aria-hidden="true"></i>
-                  <span id="onlineCertifications">Astronware</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="about-me-container__box about-me--today">
-            <div class="box__description-container">
-              <img
-                src="./images/separator.svg"
-                width={0}
-                alt=""
-                class="about-me-separator"
-                aria-hidden="true"
-              />
-              <h3 class="text-3xl lg:text-5xl font-bold">
-                <i class="fas fa-rocket" role="img" aria-hidden="true"></i>
-                <span id="today">Today</span>
-              </h3>
-              <p id="today__content" class="lg:text-lg">I love to create!</p>
+            <p id="openSource__content" class="lg:text-lg">
+              I love to create and contribute to Open Source projects (Websites,
+              apps, browser extensions, plugins). Currently, I'm working on NASA
+              Open Mission Control Technologies as a contributor. A mission
+              control framework for visualizing telemetry.
+            </p>
+            <div class="about-me-container-links">
+              <a
+                href="https://github.com/360macky?org=nasa&year_list=1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fas fa-asterisk" role="img" aria-hidden="true"></i>
+                <span id="contributions">Contributions</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/marcelo-arias/details/volunteering-experiences/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fa fa-heart" role="img" aria-hidden="true"></i>
+                <span id="volunteering">Volunteering</span>
+              </a>
             </div>
           </div>
         </div>
+        <div class="about-me-container__box">
+          <div class="box__description-container">
+            <img
+              src="./images/separator.svg"
+              width={0}
+              alt=""
+              class="about-me-separator"
+              aria-hidden="true"
+            />
+            <h3 class="text-3xl lg:text-4xl font-bold">
+              <span id="creator">Educative Content Creator</span>
+            </h3>
+            <p class="lg:text-lg">
+              I found "Arte de programar", an audiovisual project where I teach
+              Computer Science concepts using animations, drawings, and effects.
+              I'm also working on "Tienda 42", a store oriented to software
+              developers.
+            </p>
+            <div class="about-me-container-links">
+              <a
+                href="https://github.com/360macky?org=nasa&year_list=1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-youtube" role="img" aria-hidden="true"></i>
+                <span>Arte de programar</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about-me-container__box">
+          <div class="box__description-container">
+            <img
+              src="./images/separator.svg"
+              width={0}
+              alt=""
+              class="about-me-separator"
+              aria-hidden="true"
+            />
+            <h3 class="text-3xl lg:text-4xl font-bold">
+              <span id="lifelongLearner">Lifelong learner</span>
+            </h3>
+            <p id="lifelongLearner__content" class="lg:text-lg">
+              Graduated in Software Development career. I always try to learn
+              new things and experiment with new technologies. It's the best way
+              to keep up with the fast-paced world. Not everything I learn is
+              related to programming. Space exploration and Aerial Robotics are
+              topics that I love to learn about.
+            </p>
+            <div class="about-me-container-links">
+              <a
+                href="https://www.linkedin.com/in/marcelo-arias/details/certifications/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fas fa-award" role="img" aria-hidden="true"></i>
+                <span id="onlineCertifications">Online certifications</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about-me-container__box">
+          <div class="box__description-container">
+            <img
+              src="./images/separator.svg"
+              width={0}
+              alt=""
+              class="about-me-separator"
+              aria-hidden="true"
+            />
+            <h3 class="text-3xl lg:text-4xl font-bold">
+              <span id="lifelongLearner">Software Studio</span>
+            </h3>
+            <p id="lifelongLearner__content" class="lg:text-lg">
+              I started Astronware, my own Software Studio in 2023. With the
+              goal of scaling all my previous projects, experiments and products
+              into one technology brand.
+            </p>
+            <div class="about-me-container-links">
+              <a href="https://astronware.com" target="_blank" rel="noreferrer">
+                <i class="fas fa-atom" role="img" aria-hidden="true"></i>
+                <span id="onlineCertifications">Astronware</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about-me-container__box about-me--today">
+          <div class="box__description-container">
+            <img
+              src="./images/separator.svg"
+              width={0}
+              alt=""
+              class="about-me-separator"
+              aria-hidden="true"
+            />
+            <h3 class="text-3xl lg:text-4xl font-bold">
+              <span id="today">Today</span>
+            </h3>
+            <p id="today__content" class="lg:text-lg">I love to create!</p>
+          </div>
+        </div>
       </section>
-      <Contact client:only />
     </main>
-    <footer class="footer">
-      <div class="footer__row">
-        <p class="footer__title">Marcelo's Portfolio</p>
-      </div>
-      <div class="footer__row">
-        <p class="footer__description" id="phrase">
-          Wonderful things happen when you combine creativity and technology.
-          Here you can find some of my projects.
-        </p>
-        <p class="footer__description" id="madeWith">
-          Marcelo Arias is a Software Engineer.
-        </p>
-      </div>
-      <div class="footer__row">
-        <p class="footer__email">hello@marceloarias.com</p>
-        <p>2015 - 2023</p>
-      </div>
-    </footer>
-    <script src="../scripts/script.js"></script>
+    <Contact client:only />
   </body>
+  <footer class="footer">
+    <div class="footer__row">
+      <p class="footer__title">Marcelo's Portfolio</p>
+    </div>
+    <div class="footer__row">
+      <p class="footer__description" id="phrase">
+        Wonderful things happen when you combine creativity and technology. Here
+        you can find some of my projects.
+      </p>
+      <p class="footer__description" id="madeWith">
+        Marcelo Arias is a Software Engineer.
+      </p>
+    </div>
+    <div class="footer__row">
+      <p class="footer__email">hello@marceloarias.com</p>
+      <p>2015 - 2023</p>
+    </div>
+  </footer>
+  <script src="../scripts/script.js"></script>
 </html>

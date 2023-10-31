@@ -116,7 +116,6 @@
     opacity: 0.2;
     transition: opacity 300ms ease;
     line-height: 1.1;
-    font-weight: 500;
   }
   
   ul {
@@ -1207,7 +1206,7 @@
     }
   
     .contact__email-container .address {
-      font-size: 1.1rem !important;
+      font-size: 1rem !important;
       padding: 1rem 1rem !important;
     }
   

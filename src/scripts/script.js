@@ -80,7 +80,7 @@ function switchTheme() {
   const ifDarkThemeEnabled = window.matchMedia('(prefers-color-scheme: dark)').matches;
   if (ifDarkThemeEnabled) {
     document.querySelector('link[rel="icon"]').href = './images/favicon/icon-dark.ico';
-    document.getElementsByTagName('meta')['theme-color'].content = '#000000';
+    document.getElementsByTagName('meta')['theme-color'].content = '#1C1F24';
     document.documentElement.style.setProperty('--color-white', '#f7f7f7');
     document.documentElement.style.setProperty('--color-default', '#2a313a');
     document.documentElement.style.setProperty('--color-black', '#1b1f25');

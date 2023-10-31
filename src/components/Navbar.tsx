@@ -8,7 +8,7 @@ const Navbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
   return (
-    <nav className="fixed bg-white/50 border-gray-200 dark:bg-black/20 z-10 text-sm top-0 w-full backdrop-blur-md">
+    <nav className="fixed bg-white/50 border-gray-200 dark:bg-transparent z-10 text-sm top-0 w-full backdrop-blur-md">
       <div className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4 lg:px-0 lg:py-4">
         <h1 className="text-base lg:text-sm">Marcelo Arias</h1>
         <button

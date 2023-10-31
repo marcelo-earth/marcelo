@@ -24,7 +24,7 @@ const Contact = () => {
         </div>
         <div className="contact__email-container">
           <div className="address">
-            <label id="contactCallToAction">hello@marceloarias.com</label>
+            <label id="contactCallToAction" className="font-mono">hello@marceloarias.com</label>
           </div>
           <button
             className="copy"
