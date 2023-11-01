@@ -1228,7 +1228,6 @@
   
   .contact__call-to-action-container p {
     font-family: var(--font-inter);
-    font-size: 1.5rem;
   }
   
   .contact--primary {
@@ -1265,11 +1264,6 @@
     align-items: stretch;
     font-family: var(--font-inter);
     color: white;
-  }
-  
-  .contact__email-label p {
-    font-size: 1.2rem;
-    color: var(--color-primary-lighter);
   }
   
   .copied-call-to-action {
