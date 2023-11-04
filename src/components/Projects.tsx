@@ -32,7 +32,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           "bg-fuchsia-100 dark:bg-fuchsia-900/10": project.title === "Graphem",
           "bg-red-100 dark:bg-red-900/10": project.title === "ScannerCam",
           "bg-blue-100 dark:bg-blue-900/10": project.title === "Dreamify",
-          "bg-green-100 dark:bg-green-900/10": project.title === "Hackbank",
+          "bg-green-100 dark:bg-green-900/10": project.title === "SoundAir",
           "bg-yellow-100 dark:bg-yellow-900/10": project.title === "1spaceX",
           "bg-lime-100 dark:bg-lime-900/10": project.title === "PlatKey",
         }
@@ -66,7 +66,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                   "text-blue-900 dark:text-blue-200":
                     project.title === "Dreamify",
                   "text-green-900 dark:text-green-200":
-                    project.title === "Hackbank",
+                    project.title === "SoundAir",
                   "text-yellow-900 dark:text-yellow-200":
                     project.title === "1spaceX",
                   "text-lime-900 dark:text-lime-200":
@@ -89,7 +89,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                   "text-blue-900 dark:text-blue-200":
                     project.title === "Dreamify",
                   "text-green-900 dark:text-green-200":
-                    project.title === "Hackbank",
+                    project.title === "SoundAir",
                   "text-yellow-900 dark:text-yellow-200":
                     project.title === "1spaceX",
                   "text-lime-900 dark:text-lime-200":

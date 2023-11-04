@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Copy, Send, SendHorizonal } from "lucide-react";
+import { Check, Copy, Send, SendHorizonal } from "lucide-react";
 import classNames from "classnames";
 
 const Contact = () => {
@@ -33,7 +33,7 @@ const Contact = () => {
           Let's add a Discord button too.
         */}
         <div className="flex gap-x-2">
-          <div className="dark:bg-black/20 border rounded-full p-2 px-8 lg:px-12 flex justify-center items-center">
+          <div className="bg-white dark:bg-black/20 border rounded-full p-2 px-8 lg:px-12 flex justify-center items-center">
             <label id="contactCallToAction" className="font-mono lg:text-2xl">
               <span>hello</span>
               <span className="mx-2">@</span>
@@ -41,14 +41,18 @@ const Contact = () => {
             </label>
           </div>
           <button
-            className="bg-gray-800 text-white dark:bg-white dark:text-neutral-800 rounded-full p-4 flex justify-center items-center active:ring ring-gray-800"
+            className="bg-neutral-800 text-white dark:bg-white dark:text-neutral-800 rounded-full p-4 flex justify-center items-center active:ring ring-neutral-400 dark:ring-gray-800"
             aria-label="Copy email to clipboard"
             onClick={() => {
               navigator.clipboard.writeText("hello@marceloarias.com");
               setIsEmailCopied(true);
             }}
           >
-            <Copy className="lg:h-8 lg:w-8" />
+            {
+              isEmailCopied ?
+              <Check className="lg:h-8 lg:w-8" /> :
+              <Copy className="lg:h-8 lg:w-8" />
+            }
           </button>
         </div>
       </div>
