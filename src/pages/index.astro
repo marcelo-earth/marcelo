@@ -179,12 +179,12 @@ import { ChevronRight } from "lucide-react";
               </li>
               <li>
                 <a
-                  href="https://twitter.com/360macky"
-                  title="Twitter"
+                  href="https://www.threads.net/@360macky"
+                  title="Threads"
                   target="_blank"
                   rel="noreferrer"
                   ><i
-                    title="Twitter"
+                    title="Threads"
                     class="fab fa-twitter"
                     role="img"
                     aria-hidden="true"></i></a
@@ -573,23 +573,131 @@ import { ChevronRight } from "lucide-react";
     </main>
     <Contact client:only />
   </body>
-  <footer class="footer">
-    <div class="footer__row">
-      <p class="footer__title">Marcelo's Portfolio</p>
-    </div>
-    <div class="footer__row">
-      <p class="footer__description" id="phrase">
-        Wonderful things happen when you combine creativity and technology. Here
-        you can find some of my projects.
-      </p>
-      <p class="footer__description" id="madeWith">
-        Marcelo Arias is a Software Engineer.
-      </p>
-    </div>
-    <div class="footer__row">
-      <p class="footer__email">hello@marceloarias.com</p>
-      <p>2015 - 2023</p>
+  <footer class="bg-neutral-50 dark:bg-neutral-800">
+    <div class="mx-auto w-full max-w-screen-lg p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0 flex flex-col items-center">
+          <a href="/" class="flex items-center">
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white tracking-tighter"
+            >
+              Marcelo Arias
+            </span>
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+            <h2
+              class="text-left mb-6 text-sm font-semibold text-neutral-900 uppercase dark:text-white"
+            >
+              Resources
+            </h2>
+            <ul class="text-neutral-600 dark:text-neutral-400">
+              <li class="mb-4">
+                <a href="#work" class="hover:underline"> Work</a>
+              </li>
+              <li>
+                <a href="#experience" class="hover:underline"> Experience</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="text-left mb-6 text-sm font-semibold text-neutral-900 uppercase dark:text-white"
+            >
+              Social
+            </h2>
+            <ul class="text-neutral-600 dark:text-neutral-400">
+              <li class="mb-4">
+                <a
+                  href="https://mastodon.social/@360macky"
+                  class="hover:underline"
+                  target="_blank"
+                >
+                  Mastodon
+                </a>
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://www.threads.net/@360macky"
+                  class="hover:underline"
+                  target="_blank"
+                >
+                  Threads
+                </a>
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://www.instagram.com/360macky/"
+                  class="hover:underline"
+                  target="_blank"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://github.com/360macky"
+                  class="hover:underline"
+                  target="_blank"
+                >
+                  Github
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/marcelo-arias"
+                  class="hover:underline"
+                  target="_blank"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="text-left mb-6 text-sm font-semibold text-neutral-900 uppercase dark:text-white"
+            >
+              More
+            </h2>
+            <ul class="text-neutral-600 dark:text-neutral-400">
+              <li class="mb-4">
+                <a
+                  href="https://astronware.com/"
+                  class="hover:underline"
+                  target="_blank"
+                >
+                  Company
+                </a>
+              </li>
+              <li class="mb-4">
+                <a
+                  href="mailto:hello@marceloarias.com"
+                  target="_blank"
+                >
+                  E-mail
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+      />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span
+          class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+        >
+          Copyright © 2023{" "}
+          <a href="https://astronware.com/" class="hover:underline">
+            MarceloArias.com
+          </a>
+           All rights reserved.
+        </span>
+      </div>
     </div>
   </footer>
-  <script src="../scripts/script.js"></script>
 </html>
+<script src="../scripts/script.js"></script>

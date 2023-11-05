@@ -14,7 +14,7 @@ const Contact = () => {
           className="max-w-[6.5rem]"
         />
       </div>
-      <h2 className="text-4xl lg:text-6xl font-bold">Let's create together</h2>
+      <h2 className="text-4xl lg:text-6xl font-bold">Let's talk!</h2>
       <div className="contact-section-header"></div>
       <div className="contact__call-to-action-container">
         <p className="text-xl">
