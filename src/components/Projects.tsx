@@ -47,6 +47,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               aria-hidden="true"
               width={0}
               height={0}
+              alt={`Logo of ${project.title}`}
             />
             {project.title}
           </h3>
