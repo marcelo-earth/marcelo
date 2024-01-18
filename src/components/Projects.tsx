@@ -33,7 +33,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           "bg-red-100 dark:bg-red-900/10": project.title === "ScannerCam",
           "bg-blue-100 dark:bg-blue-900/10": project.title === "Dreamify",
           "bg-green-100 dark:bg-green-900/10": project.title === "SoundAir",
-          "bg-yellow-100 dark:bg-yellow-900/10": project.title === "1spaceX",
           "bg-lime-100 dark:bg-lime-900/10": project.title === "PlatKey",
         }
       )}
@@ -56,6 +55,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           <p>{project.longDescription}</p>
           <div className="flex gap-y-2 flex-row gap-x-3 lg:gap-x-6 py-2 text-center">
             <a
+              target="_blank"
               href={project.appUrl}
               className={classNames(
                 "text-lg flex justify-center items-center gap-x-1 hover:underline underline-offset-8",
@@ -79,6 +79,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               <ChevronRight />
             </a>
             <a
+              target="_blank"
               href={project.caseStudyUrl}
               className={classNames(
                 "text-lg flex justify-center items-center gap-x-1 hover:underline underline-offset-8",
