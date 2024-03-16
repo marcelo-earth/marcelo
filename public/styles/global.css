@@ -405,10 +405,7 @@
   @media (min-width: 1280px) {
     .welcome-section__photograph-container {
       display: flex;
-      position: relative;
-      justify-content: end;
-      align-items: end;
-      align-self: flex-end;
+      
       /* max-width: 32%; */
     }
   

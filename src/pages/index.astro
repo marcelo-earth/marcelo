@@ -111,7 +111,9 @@ import { ChevronRight } from "lucide-react";
         id="welcome"
         class="welcome-section min-h-screen xl:min-h-min xl:pt-24"
       >
-        <div class="max-w-screen-lg mx-auto flex justify-center items-center">
+        <div
+          class="max-w-screen-lg mx-auto flex justify-center items-center min-h-[80vh] lg:py-16 flex justify-center"
+        >
           <div class="welcome-section__card">
             <h1
               id="title"
@@ -141,6 +143,12 @@ import { ChevronRight } from "lucide-react";
               >
                 Case studies
               </a>
+              <a
+                href="#contact"
+                class="btn btn__call-action text-xl lg:text-lg btn__call-action--secondary"
+              >
+                Contact
+              </a>
             </div>
             <div class="welcome-section__work">
               <blockquote>
@@ -152,7 +160,7 @@ import { ChevronRight } from "lucide-react";
                   Marcelo creates software products: from apps, websites,
                   plugins and libraries. With more than 8 years building things
                   that live on the internet. Loves bikes, robotics, and
-                  astronomy. Lives in the west coast of Lima.
+                  astronomy. Speaks Spanish, English, and French.
                 </p>
               </blockquote>
               <div class="welcome-section__work__logos">
@@ -164,7 +172,7 @@ import { ChevronRight } from "lucide-react";
               </div>
             </div>
             <ul class="welcome-section__social-networks">
-              <li>
+              <li class="border rounded-full">
                 <a
                   href="https://mastodon.social/@360macky"
                   title="Mastodon"
@@ -177,7 +185,7 @@ import { ChevronRight } from "lucide-react";
                     aria-hidden="true"></i></a
                 >
               </li>
-              <li>
+              <li class="border rounded-full">
                 <a
                   href="https://www.threads.net/@360macky"
                   title="Threads"
@@ -190,7 +198,7 @@ import { ChevronRight } from "lucide-react";
                     aria-hidden="true"></i></a
                 >
               </li>
-              <li>
+              <li class="border rounded-full">
                 <a
                   href="https://github.com/360macky"
                   title="GitHub"
@@ -199,7 +207,7 @@ import { ChevronRight } from "lucide-react";
                   ><i title="GitHub" class="fab fa-github" role="img"></i></a
                 >
               </li>
-              <li>
+              <li class="border rounded-full">
                 <a
                   href="https://youtube.com/@360macky"
                   title="YouTube"
@@ -212,7 +220,7 @@ import { ChevronRight } from "lucide-react";
                     aria-hidden="true"></i></a
                 >
               </li>
-              <li>
+              <li class="border rounded-full">
                 <a
                   href="https://news.ycombinator.com/user?id=360macky"
                   title="HackerNews"
@@ -225,7 +233,7 @@ import { ChevronRight } from "lucide-react";
                     aria-hidden="true"></i></a
                 >
               </li>
-              <li>
+              <li class="border rounded-full">
                 <a
                   href="https://www.linkedin.com/in/marcelo-arias/"
                   title="LinkedIn"
@@ -240,7 +248,7 @@ import { ChevronRight } from "lucide-react";
               </li>
             </ul>
           </div>
-          <div class="welcome-section__photograph-container max-w-md">
+          <div class="welcome-section__photograph-container max-w-sm">
             <img
               src="/images/portraits/MarceloArias.webp"
               alt="Marcelo Arias"
@@ -515,6 +523,31 @@ import { ChevronRight } from "lucide-react";
                 aria-hidden="true"
               />
               <h3 class="text-3xl lg:text-4xl font-bold">
+                <span id="lifelongLearner"> Independent Developer</span>
+              </h3>
+              <p id="lifelongLearner__content" class="lg:text-lg">
+                I&rsquo;ve created Dreamify, a platform that helps people to
+                generate art (images, videos, and more) using open-source
+                Machine Learning models. It has over one thousand users.
+              </p>
+              <div class="about-me-container-links">
+                <a href="https://dreamify.art" target="_blank" rel="noreferrer">
+                  <i class="fas fa-rocket" role="img" aria-hidden="true"></i>
+                  <span id="onlineCertifications">Dreamify</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about-me-container__box">
+            <div class="box__description-container">
+              <img
+                src="./images/separator.svg"
+                width={0}
+                alt=""
+                class="about-me-separator"
+                aria-hidden="true"
+              />
+              <h3 class="text-3xl lg:text-4xl font-bold">
                 <span id="lifelongLearner">
                   Rise of Artificial Intelligence
                 </span>
@@ -573,7 +606,7 @@ import { ChevronRight } from "lucide-react";
     </main>
     <Contact client:only />
   </body>
-  <footer class="bg-gray-50 dark:bg-black/10">
+  <footer class="bg-neutral-50 dark:bg-black/10">
     <div class="mx-auto w-full max-w-screen-lg p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0 flex flex-col items-center">
@@ -681,10 +714,7 @@ import { ChevronRight } from "lucide-react";
                 </a>
               </li>
               <li class="mb-4">
-                <a
-                  href="mailto:hello@marceloarias.com"
-                  target="_blank"
-                >
+                <a href="mailto:hello@marceloarias.com" target="_blank">
                   E-mail
                 </a>
               </li>
@@ -693,17 +723,17 @@ import { ChevronRight } from "lucide-react";
         </div>
       </div>
       <hr
-        class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        class="my-6 border-neutral-200 sm:mx-auto dark:border-neutral-700 lg:my-8"
       />
       <div class="sm:flex sm:items-center sm:justify-between">
         <span
-          class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          class="text-sm text-neutral-500 sm:text-center dark:text-neutral-400"
         >
-          Copyright © 2023{" "}
+          Copyright © {new Date().getFullYear()}{" "}
           <a href="https://astronware.com/" class="hover:underline">
             MarceloArias.com
           </a>
-           All rights reserved.
+          All rights reserved.
         </span>
       </div>
     </div>
