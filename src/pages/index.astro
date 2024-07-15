@@ -51,6 +51,11 @@ import { ChevronRight } from "lucide-react";
       content="I'm Marcelo Arias. Software engineer, open-source contributor and creator of tech products. Working on Machine Learning, Web Development and Aerial Robotics."
     />
 
+    <meta
+      property="og:image"
+      content="https://marceloarias.com/images/MarceloArias.webp"
+    />
+
     <link rel="canonical" href="https://marceloarias.com" />
 
     <script type="application/ld+json">
@@ -59,7 +64,17 @@ import { ChevronRight } from "lucide-react";
         "@type": "WebSite",
         "name": "Marcelo Arias",
         "alternateName": "Marcelo Arias — Software Engineer",
-        "url": "https://marceloarias.com"
+        "url": "https://marceloarias.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/marcelo-arias",
+          "https://github.com/360macky",
+          "https://twitter.com/360macky"
+        ],
+        "jobTitle": "Software Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Astronomical Software Company"
+        }
       }
     </script>
 
@@ -172,19 +187,6 @@ import { ChevronRight } from "lucide-react";
               </div>
             </div>
             <ul class="welcome-section__social-networks">
-              <li class="border rounded-full">
-                <a
-                  href="https://mastodon.social/@360macky"
-                  title="Mastodon"
-                  target="_blank"
-                  rel="noreferrer"
-                  ><i
-                    title="Mastodon"
-                    class="fab fa-mastodon"
-                    role="img"
-                    aria-hidden="true"></i></a
-                >
-              </li>
               <li class="border rounded-full">
                 <a
                   href="https://www.threads.net/@360macky"
@@ -468,7 +470,7 @@ import { ChevronRight } from "lucide-react";
               <p class="lg:text-lg">
                 I found "Arte de programar", an audiovisual project where I
                 teach Computer Science concepts using animations, drawings, and
-                effects. I'm also working on "Tienda 42", a store oriented to
+                effects. I'm also working on <b>42thing</b>, a store oriented to
                 software developers.
               </p>
               <div class="about-me-container-links">
@@ -588,7 +590,7 @@ import { ChevronRight } from "lucide-react";
               <p id="lifelongLearner__content" class="lg:text-lg">
                 I started the Astronomical Software Company, my own Software
                 Studio in 2023. With the goal of scaling all my projects,
-                experiments and products into one technology brand.
+                experiments and products into one brand.
               </p>
               <div class="about-me-container-links">
                 <a href="https://astronware.com" target="_blank">
