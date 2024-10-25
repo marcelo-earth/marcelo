@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   const whiteCover = document.getElementById('white-cover');
   const typewriterText = document.getElementById('typewriter-text');
-  typewriterText.textContent = '@360macky';
+  typewriterText.textContent = '🌎';
   typewriterText.style.animation = 'fadeIn 0.3s';
   typewriterText.style.animationDelay = '0.3s'; // Add this line for the delay
   typewriterText.style.animationFillMode = 'both';
